@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  vtiger:
+    build: .
+    ports:
+      - 8080:80
+    volumes:
+      - vtiger:/var/lib/vtiger
+    links:
+      - mysql
+
+  mysql:
+    image: mysql:5.5
+    environment:
+      MYSQL_ROOT_PASSWORD: pw
+    volumes:
+      - mysql:/var/lib/mysql:rw
+
+volumes:
+  mysql:
+  vtiger:
