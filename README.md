@@ -10,9 +10,9 @@ goto localhost:8080
 change settings in php.ini
 
 ### Database
-Hostname: mysql
-Username: root
-Password: pw
-Root_User: root
-Root_password: pw
-Database name e.g.: vtiger_db
+- Hostname: mysql
+- Username: root
+- Password: pw
+- Root_User: root
+- Root_password: pw
+- Database name e.g.: vtiger_db
