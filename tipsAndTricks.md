@@ -29,7 +29,7 @@ WHERE sortorderid = 3;
 
 ### Add API key
 1. Get Google Maps Javascript API Key - https://code.google.com/apis/console
-2. Open to `layouts/v7/modules/Google/resources/Map.js`
+2. Open `layouts/v7/modules/Google/resources/Map.js`
 3. Add your API Key in `Map.js` *line 43f.*:
 
 ```javascript
