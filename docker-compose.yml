@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 
 services:
   vtiger:
@@ -7,6 +7,7 @@ services:
       - 8080:80
     volumes:
       - vtiger:/var/lib/vtiger
+      - www:/var/www
     links:
       - mysql
 
@@ -20,3 +21,4 @@ services:
 volumes:
   mysql:
   vtiger:
+  www:

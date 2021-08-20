@@ -1,17 +1,5 @@
 # Tips and Tricks
 
-## Workflows
-
-### Set up Corn Job
-
-1. Open CLI of the `vtiger` container
-2. run `crontab -e` and choose `nano` as editor
-3. add the following line to the end of the opened file
-```bash
-*/5 * * * * /var/www/html/vtigercrm/cron/vtigercron.sh 
-```
-4. exit and save
-
 ## Campagne
 
 ### Change Default Campagne Status
@@ -35,4 +23,16 @@ WHERE sortorderid = 2;
 UPDATE vtiger_campaignrelstatus
 SET campaignrelstatus = 'never contact again'
 WHERE sortorderid = 3;
+```
+
+## Google Maps
+
+### Add API key
+1. Get Google Maps Javascript API Key - https://code.google.com/apis/console
+2. Open to `layouts/v7/modules/Google/resources/Map.js`
+3. Add your API Key in `Map.js` *line 43f.*:
+
+```javascript
+loadMapScript : function() {
+    var API_KEY = 'YOUR_MAP_API_KEY'; // CONFIGURE THIS 
 ```

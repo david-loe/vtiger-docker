@@ -12,6 +12,10 @@ vtiger crm Dockerized
 change settings in `php.ini`
 
 ### Database
+
+1. check: ✅ Create new database
+2. enter the following values:
+
 | Entity        | Value     |
 |---------------|-----------|
 | Host name     | mysql     |
