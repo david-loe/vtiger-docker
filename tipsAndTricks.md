@@ -36,3 +36,15 @@ WHERE sortorderid = 3;
 loadMapScript : function() {
     var API_KEY = 'YOUR_MAP_API_KEY'; // CONFIGURE THIS 
 ```
+
+## Restore Volumes
+
+If restoring volumes from one installation in another place the `$site_URL` has to be changed accordingly.
+
+1. open `volumes/vtiger-docker_www/_data/html/vtigercrm/`
+2. edit `$site_URL` in `config.inc.php`
+
+Also permissions have to be renewed.
+
+1. open vtiger container CLI
+2. run `chmod -R 777 /var/www/html && chmod 644 /etc/cron.d/vtiger-cron && chmod 744 /var/www/html/vtigercrm/cron/vtigercron.sh`
