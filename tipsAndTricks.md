@@ -1,5 +1,9 @@
 # Tips and Tricks
 
+## Module
+
+In order to customize a module, the [HERE](scripts) can be helpful.
+
 ## Campagne
 
 ### Change Default Campagne Status
