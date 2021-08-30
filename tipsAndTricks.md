@@ -9,6 +9,15 @@ In order to customize a module, the scripts [HERE](scripts) can be helpful.
 1. Copy [fapp.php](scripts/fapp.php) into your vtigercrm root folder
 2. Access `yourvtigerurl.com/fapp.php`
 
+### Remove Salutation
+
+1. Change uitype of the `firstname` fields from 55 to 1 by running the following sql query:
+```SQL
+USE vtiger_db;
+
+UPDATE vtiger_field SET uitype = 1 WHERE uitype = 55 AND fieldname='firstname';
+```
+
 ## Campagne
 
 ### Change Default Campagne Status
