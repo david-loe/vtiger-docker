@@ -2,7 +2,12 @@
 
 ## Module
 
-In order to customize a module, the [HERE](scripts) can be helpful.
+In order to customize a module, the scripts [HERE](scripts) can be helpful.
+
+### Profile Picture in Leads
+
+1. Copy [fapp.php](scripts/fapp.php) into your vtigercrm root folder
+2. Access `yourvtigerurl.com/fapp.php`
 
 ## Campagne
 
