@@ -1,5 +1,9 @@
 # Tips and Tricks
 
+## Debugging
+
+For Debugging follow the instructions on the [wiki page](https://wiki.vtiger.com/index.php/Developer_Debug_Techniques#DATABASE).
+
 ## Module
 
 In order to customize a module, the scripts [HERE](scripts) can be helpful.
